@@ -1,0 +1,185 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.jpar4.kiwis.kiwis.fragment.ProfileFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <RelativeLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:paddingTop="16dp"
+       android:paddingRight="16dp"
+       android:paddingLeft="16dp"
+       android:paddingBottom="8dp"
+       >
+       <ImageView
+           android:id="@+id/profile_iv_person"
+           android:layout_width="match_parent"
+           android:layout_height="150dp"
+           android:src="@mipmap/ic_person"
+           />
+       <ImageButton
+           android:id="@+id/ibtn_editProfile"
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:layout_alignParentRight="true"
+           android:src="@mipmap/ic_profile_edit"
+           />
+
+
+       <ImageView
+           android:src="@mipmap/ic_profile_name"
+           android:id="@+id/profile_iv_username"
+           android:layout_below="@+id/profile_iv_person"
+           android:layout_width="40dp"
+           android:layout_height="30dp" />
+       <TextView
+           android:id="@+id/profile_tv_username"
+           android:layout_below="@+id/profile_iv_username"
+           android:gravity="center_horizontal"
+           android:layout_width="40dp"
+           android:layout_height="wrap_content"
+           android:text="Name"
+           android:textSize="10sp"
+           android:textStyle="bold"
+           />
+       <TextView
+           android:id="@+id/profile_tv_username2"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_below="@+id/profile_iv_person"
+           android:layout_alignTop="@+id/profile_iv_username"
+           android:layout_toRightOf="@+id/profile_iv_username"
+           android:gravity="center_vertical"
+           android:text="박종진"
+           android:lines="1"
+           android:textColor="#000000"
+           android:paddingLeft="8dp"
+           />
+       <View
+           android:layout_alignTop="@+id/profile_tv_username"
+           android:layout_width="match_parent"
+           android:layout_height="10dp"
+           android:background="@color/colorAccent4"
+           />
+
+
+       <ImageView
+           android:src="@mipmap/ic_profile_name"
+           android:id="@+id/profile_iv_userid"
+           android:layout_below="@+id/profile_tv_username"
+           android:layout_width="40dp"
+           android:layout_height="30dp" />
+       <TextView
+           android:id="@+id/profile_tv_userid"
+           android:layout_below="@+id/profile_iv_userid"
+           android:gravity="center_horizontal"
+           android:layout_width="40dp"
+           android:layout_height="wrap_content"
+           android:text="ID"
+           android:textSize="10sp"
+           android:textStyle="bold"
+           />
+       <TextView
+           android:id="@+id/profile_tv_userid2"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_below="@+id/profile_tv_username2"
+           android:layout_alignTop="@+id/profile_iv_userid"
+           android:layout_toRightOf="@+id/profile_iv_userid"
+           android:gravity="center_vertical"
+           android:text="jackpot_asdxxx"
+           android:lines="1"
+           android:textColor="#000000"
+           android:paddingLeft="8dp"
+           />
+       <View
+           android:layout_alignTop="@+id/profile_tv_userid"
+           android:layout_width="match_parent"
+           android:layout_height="10dp"
+           android:background="@color/colorAccent4"
+           />
+
+
+       <ImageView
+           android:src="@mipmap/ic_profile_email"
+           android:id="@+id/profile_iv_useremail"
+           android:layout_below="@+id/profile_tv_userid"
+           android:layout_width="40dp"
+           android:layout_height="30dp" />
+       <TextView
+           android:id="@+id/profile_tv_useremail"
+           android:layout_below="@+id/profile_iv_useremail"
+           android:gravity="center_horizontal"
+           android:layout_width="40dp"
+           android:layout_height="wrap_content"
+           android:text="E-mail"
+           android:textSize="10sp"
+           android:textStyle="bold"
+           android:lines="1"
+           />
+       <TextView
+           android:id="@+id/profile_tv_useremail2"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_below="@+id/profile_tv_userid2"
+           android:layout_alignTop="@+id/profile_iv_useremail"
+           android:layout_toRightOf="@+id/profile_iv_useremail"
+           android:gravity="center_vertical"
+           android:text="jackpot_asdxxx@gmail.com"
+           android:lines="1"
+           android:textColor="#000000"
+           android:paddingLeft="8dp"
+           />
+       <View
+           android:layout_alignTop="@+id/profile_tv_useremail"
+           android:layout_width="match_parent"
+           android:layout_height="10dp"
+           android:background="@color/colorAccent4"
+           />
+
+
+       <ImageView
+           android:src="@mipmap/ic_profile_phone"
+           android:id="@+id/profile_iv_userphone"
+           android:layout_below="@+id/profile_tv_useremail"
+           android:layout_width="40dp"
+           android:layout_height="30dp" />
+       <TextView
+           android:id="@+id/profile_tv_userphonumber"
+           android:layout_below="@+id/profile_iv_userphone"
+           android:gravity="center_horizontal"
+           android:layout_width="40dp"
+           android:layout_height="wrap_content"
+           android:text="Phone"
+           android:textSize="10sp"
+           android:textStyle="bold"
+           />
+       <TextView
+           android:id="@+id/profile_tv_userphonumber2"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_below="@+id/profile_tv_useremail2"
+           android:layout_alignTop="@+id/profile_iv_userphone"
+           android:layout_toRightOf="@+id/profile_tv_useremail"
+           android:gravity="center_vertical"
+           android:text="010-1234-1234"
+           android:lines="1"
+           android:textColor="#000000"
+           android:paddingLeft="8dp"
+           />
+       <View
+           android:layout_alignTop="@+id/profile_tv_userphonumber"
+           android:layout_width="match_parent"
+           android:layout_height="10dp"
+           android:background="@color/colorAccent4"
+           />
+
+   </RelativeLayout>
+</ScrollView>
+
+</FrameLayout>

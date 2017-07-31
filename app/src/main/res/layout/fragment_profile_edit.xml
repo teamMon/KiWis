@@ -1,0 +1,210 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.jpar4.kiwis.kiwis.fragment.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:id="@+id/edit_iv_person"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_person"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/edit_ibtn_uploadprofile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_add_photo" />
+
+
+            <ImageView
+                android:id="@+id/edit_iv_username"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edit_iv_person"
+                android:src="@mipmap/ic_profile_name" />
+
+            <TextView
+                android:id="@+id/edit_tv_username"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_iv_username"
+                android:gravity="center_horizontal"
+                android:text="Name"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_tv_username2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/edit_iv_username"
+                android:layout_below="@+id/edit_iv_person"
+                android:layout_toRightOf="@+id/edit_iv_username"
+                android:background="#00ffffff"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="8dp"
+                android:text="박종진"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_alignTop="@+id/edit_tv_username"
+                android:background="@color/colorAccent4" />
+
+
+            <ImageView
+                android:id="@+id/edit_iv_userid"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edit_tv_username"
+                android:src="@mipmap/ic_profile_name" />
+
+            <TextView
+                android:id="@+id/edit_tv_userid"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_iv_userid"
+                android:gravity="center_horizontal"
+                android:text="ID"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/edit_tv_userid2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/edit_iv_userid"
+                android:layout_below="@+id/edit_tv_username2"
+                android:layout_toRightOf="@+id/edit_iv_userid"
+                android:background="#00ffffff"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="8dp"
+                android:text="jackpot_asdxxx"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_alignTop="@+id/edit_tv_userid"
+                android:background="@color/colorAccent4" />
+
+
+            <ImageView
+                android:id="@+id/edit_iv_useremail"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edit_tv_userid"
+                android:src="@mipmap/ic_profile_email" />
+
+            <TextView
+                android:id="@+id/edit_tv_useremail"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_iv_useremail"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:text="E-mail"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_tv_useremail2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/edit_iv_useremail"
+                android:layout_below="@+id/edit_tv_userid2"
+                android:layout_toRightOf="@+id/edit_iv_useremail"
+                android:background="#00ffffff"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="8dp"
+                android:text="jackpot_asdxxx@gmail.com"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_alignTop="@+id/edit_tv_useremail"
+                android:background="@color/colorAccent4" />
+
+
+            <ImageView
+                android:id="@+id/edit_iv_userphone"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/edit_tv_useremail"
+                android:src="@mipmap/ic_profile_phone" />
+
+            <TextView
+                android:id="@+id/edit_tv_userphonumber"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_iv_userphone"
+                android:gravity="center_horizontal"
+                android:text="Phone"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_tv_userphonumber2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/edit_iv_userphone"
+                android:layout_below="@+id/edit_tv_useremail2"
+                android:layout_toRightOf="@+id/edit_tv_useremail"
+                android:background="#00ffffff"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="8dp"
+                android:text="010-1234-1234"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_alignTop="@+id/edit_tv_userphonumber"
+                android:background="@color/colorAccent4" />
+
+            <Button
+                android:id="@+id/edit_btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_tv_userphonumber"
+                android:layout_marginTop="100dp"
+                android:onClick="onConfirm"
+                android:text="Confirm"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
